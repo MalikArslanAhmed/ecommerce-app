@@ -1,0 +1,85 @@
+.wrapper1 {
+    background: #2e2e54;
+    font-size: small;
+}
+
+.wrapper1 .footer1-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 22px 0 30px;
+    color: #fff;
+
+}
+
+.wrapper1 .footer1-container .container1 {
+    font-size: small;
+    width: 297px;
+    margin-left: 367.5px;
+}
+
+.wrapper1 .footer1-container .container1 .customercare {
+    margin-top: 0;
+    line-height: 18px;
+}
+
+.wrapper1 .footer1-container a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.wrapper1 .footer1-container .links {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper1 .footer1-container .links .make-money {
+
+    margin-bottom: 6px;
+
+}
+
+.wrapper1 .footer1-container .container2 {
+    width: 297px;
+    height: 280px;
+    padding-top: 28px;
+}
+
+.wrapper1 .footer1-container .container2 .footer-title {
+    margin-bottom: 2px;
+}
+
+.wrapper1 .footer1-container .container3 .upper {
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper1 .footer1-container .container3 .upper .qrimg .qrimg1 {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.wrapper1 .footer1-container .container3 .upper .daraz-icon {
+    margin: 0 0 0 20px;
+}
+
+.wrapper1 .footer1-container .container3 .lower img {
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.wrapper1 .footer1-container .container3 .upper .daraz-icon .img {
+    height: 42px;
+    width: 42px;
+    margin-top: 20px;
+}
+
+.wrapper1 .footer1-container .container3 .upper .daraz-icon .text {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #f57224;
+
+}
+
+.wrapper1 .footer1-container .container3 .upper .daraz-icon .download-app {
+    margin: 0 0 0 0;
+}
