@@ -1,70 +1,142 @@
 .wrapper-one {
 	background: #2e2e54;
-	.footer-one-container {
+
+	.query-img-one {
+		display: none;
+	}
+}
+
+.footer-one-container {
+	display: flex;
+	justify-content: flex-start;
+	padding: 22px 0 30px;
+	color: #fff;
+	width: 63%;
+	margin: auto;
+	gap: 110px;
+
+	.container-one {
+		.customercare {
+			margin-top: 0;
+			line-height: 18px;
+		}
+	}
+
+	.links {
 		display: flex;
-		justify-content: flex-start;
-		padding: 22px 0 30px;
-		color: #fff;
-		width: 63%;
-		margin: auto;
-		gap: 110px;
-		.container-one {
-			.customercare {
-				margin-top: 0;
-				line-height: 18px;
-			}
+		flex-direction: column;
+
+		a {
+			color: #fff;
+			text-decoration: none;
+			font-size: small;
 		}
-		.links {
+
+		.make-money {
+			margin-bottom: 6px;
+		}
+	}
+
+	.container-two {
+		margin-top: 28px;
+	}
+
+	.container-three {
+		.upper {
 			display: flex;
-			flex-direction: column;
-			a {
-				color: #fff;
-				text-decoration: none;
-				font-size: small;
+			align-items: flex-end;
+			gap: 20px;
+
+			.qrimg {
+				width: 100px;
+
+				.qrimg1 {
+					width: 100%;
+					border-radius: 10px;
+				}
 			}
-			.make-money {
-				margin-bottom: 6px;
-			}
-		}
-		.container-two {
-			margin-top: 28px;
-		}
-		.container-three {
-			.upper {
-				display: flex;
-				align-items: flex-end;
-				gap: 20px;
-				.qrimg {
-					width: 100px;
-					.qrimg1 {
+
+			.daraz-icon {
+				.text {
+					margin-top: 0;
+					margin-bottom: 0;
+					color: #f57224;
+				}
+
+				.download-app {
+					margin: 0;
+				}
+
+				.daraz-img-container {
+					height: 42px;
+					width: 42px;
+
+					.img {
 						width: 100%;
-						border-radius: 10px;
-					}
-				}
-				.daraz-icon {
-					.text {
-						margin-top: 0;
-						margin-bottom: 0;
-						color: #f57224;
-					}
-					.download-app {
-						margin: 0;
-					}
-					.daraz-img-container {
-						height: 42px;
-						width: 42px;
-						.img {
-							width: 100%;
-						}
 					}
 				}
 			}
-			.lower {
-				img {
-					margin-top: 25px;
-					cursor: pointer;
-				}
+		}
+
+		.lower {
+			img {
+				margin-top: 25px;
+				cursor: pointer;
 			}
 		}
 	}
+}
+
+@media screen and (max-width:1057px) {
+	.wrapper-one {
+		.footer-one-container {
+			width: 100%;
+			display: flex;
+			gap: 10px;
+			padding: 10px 10px;
+		}
+
+	}
+}
+
+@media screen and (max-width:860px) {
+	.wrapper-one {
+		.query-img-one {
+			display: flex;
+			justify-content: center;
+		}
+
+		.lower {
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width:686px) {
+	.wrapper-one {
+		.footer-one-container {
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 0;
+			.width-adjust {
+				width: 48%;
+				margin: 0;
+			}
+			.container-three{
+				width: 98%;
+				display: flex;
+				justify-content: center;
+			}
+		}
+	}
+}
+@media screen and (max-width:500px){
+	.wrapper-one {
+		font-size: x-small;
+		.query-img-one {
+			.daraz-app{
+			width: 50%;
+		}
+}
+}
 }

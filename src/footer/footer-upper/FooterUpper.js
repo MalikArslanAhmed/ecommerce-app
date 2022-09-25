@@ -6,7 +6,7 @@ function FooterUpper() {
     return (
         <div className='wrapper-one'>
             <div className='footer-one-container'>
-                <div className='container-one'>
+                <div className='width-adjust container-one'>
                     <h2 className='customercare'>Customer Care</h2>
                     <div className='links'>
                         <a href="//helpcenter.daraz.pk?scm=1003.4.icms-zebra-5029545-6837665.OTHER_6500792818_7651842">Help Center</a>
@@ -25,7 +25,7 @@ function FooterUpper() {
                         <a href="//www.daraz.pk/wow/i/pk/landingpage/daraz-affiliate-program?hybrid=1&amp;scm=1003.4.icms-zebra-5029545-6818663.OTHER_6053378283_7609922">Join Daraz Affiliate Program</a>
                     </div>
                 </div>
-                <div className='container-two'>
+                <div className='width-adjust container-two'>
                     <h3 >Daraz</h3>
                     <div className='links'>
                         <a href="//www.daraz.pk/about-us/?scm=1003.4.icms-zebra-5029545-6818488.OTHER_6053340168_7609373">About Us</a>
@@ -43,7 +43,7 @@ function FooterUpper() {
                         <a href="//www.daraz.pk/cricket-live-streaming/?scm=1003.4.icms-zebra-5029545-6818488.OTHER_6500643536_7609373">Ban Vs Afg</a>
                     </div>
                 </div>
-                <div className='container-three'>
+                <div className='width-adjust container-three'>
                     <div className='upper'>
                         <div className='qrimg'>
                             <img className='qrimg1' src="//laz-img-cdn.alicdn.com/images/ims-web/TB18aqePBLoK1RjSZFuXXXn0XXa.png" alt="QR CODE"></img>
@@ -61,6 +61,9 @@ function FooterUpper() {
                     </div>
                 </div>
             </div>
+            <div className='query-img-one'>
+                        <img className='daraz-app' src="daraz-app.png" alt="Italian Trulli" />
+                    </div>
         </div>
     )
 }
