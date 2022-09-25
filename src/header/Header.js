@@ -1,7 +1,9 @@
 import './Header.css';
 function Header() {
     return (
-  <div><p>a</p></div>
+  <div className='header-wrapper'>
+  
+    </div>
     );
   }
   

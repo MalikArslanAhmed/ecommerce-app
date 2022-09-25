@@ -1,0 +1,70 @@
+.wrapper-one {
+	background: #2e2e54;
+	.footer-one-container {
+		display: flex;
+		justify-content: flex-start;
+		padding: 22px 0 30px;
+		color: #fff;
+		width: 63%;
+		margin: auto;
+		gap: 110px;
+		.container-one {
+			.customercare {
+				margin-top: 0;
+				line-height: 18px;
+			}
+		}
+		.links {
+			display: flex;
+			flex-direction: column;
+			a {
+				color: #fff;
+				text-decoration: none;
+				font-size: small;
+			}
+			.make-money {
+				margin-bottom: 6px;
+			}
+		}
+		.container-two {
+			margin-top: 28px;
+		}
+		.container-three {
+			.upper {
+				display: flex;
+				align-items: flex-end;
+				gap: 20px;
+				.qrimg {
+					width: 100px;
+					.qrimg1 {
+						width: 100%;
+						border-radius: 10px;
+					}
+				}
+				.daraz-icon {
+					.text {
+						margin-top: 0;
+						margin-bottom: 0;
+						color: #f57224;
+					}
+					.download-app {
+						margin: 0;
+					}
+					.daraz-img-container {
+						height: 42px;
+						width: 42px;
+						.img {
+							width: 100%;
+						}
+					}
+				}
+			}
+			.lower {
+				img {
+					margin-top: 25px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}

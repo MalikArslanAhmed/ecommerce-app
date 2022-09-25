@@ -1,12 +1,12 @@
-import './Footer1.css'
+import './FooterUpper.scss'
 // import { BiAccessibility } from "react-icons/bi";
 
 
-function Footer1() {
+function FooterUpper() {
     return (
-        <div className='wrapper1'>
-            <div className='footer1-container'>
-                <div className='container1'>
+        <div className='wrapper-one'>
+            <div className='footer-one-container'>
+                <div className='container-one'>
                     <h2 className='customercare'>Customer Care</h2>
                     <div className='links'>
                         <a href="//helpcenter.daraz.pk?scm=1003.4.icms-zebra-5029545-6837665.OTHER_6500792818_7651842">Help Center</a>
@@ -25,7 +25,7 @@ function Footer1() {
                         <a href="//www.daraz.pk/wow/i/pk/landingpage/daraz-affiliate-program?hybrid=1&amp;scm=1003.4.icms-zebra-5029545-6818663.OTHER_6053378283_7609922">Join Daraz Affiliate Program</a>
                     </div>
                 </div>
-                <div className='container2'>
+                <div className='container-two'>
                     <h3 >Daraz</h3>
                     <div className='links'>
                         <a href="//www.daraz.pk/about-us/?scm=1003.4.icms-zebra-5029545-6818488.OTHER_6053340168_7609373">About Us</a>
@@ -43,13 +43,15 @@ function Footer1() {
                         <a href="//www.daraz.pk/cricket-live-streaming/?scm=1003.4.icms-zebra-5029545-6818488.OTHER_6500643536_7609373">Ban Vs Afg</a>
                     </div>
                 </div>
-                <div className='container3'>
+                <div className='container-three'>
                     <div className='upper'>
                         <div className='qrimg'>
                             <img className='qrimg1' src="//laz-img-cdn.alicdn.com/images/ims-web/TB18aqePBLoK1RjSZFuXXXn0XXa.png" alt="QR CODE"></img>
                         </div>
                         <div className='daraz-icon'>
-                            <img className='img' src="//icms-image.slatic.net/images/ims-web/9bef0e70-2a7c-48b7-91cb-59c5c83c5b46.png" alt="" />
+                            <div className='daraz-img-container'>
+                                <img className='img' src="//icms-image.slatic.net/images/ims-web/9bef0e70-2a7c-48b7-91cb-59c5c83c5b46.png" alt="" />
+                            </div>
                             <p className='text'>Happy Shopping</p>
                             <p className='download-app'>Download App</p>
                         </div>
@@ -63,4 +65,4 @@ function Footer1() {
     )
 }
 
-export default Footer1
+export default FooterUpper

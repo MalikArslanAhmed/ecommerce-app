@@ -1,0 +1,67 @@
+.wrapper-two {
+    display: flex;
+    width: 63%;
+    margin: auto;
+
+    .footer-two-container-one {
+        display: flex;
+        padding: 22px 0 30px;
+        gap: 28px;
+
+        .container-one {
+            .payment-methods {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .span {
+                font-size: 20px;
+            }
+
+        }
+
+        .container-two {
+
+            .span {
+                font-size: 20px;
+            }
+
+            .img {
+                .daraz-international {
+                    margin-top: 10px;
+                }
+            }
+
+        }
+    }
+
+    .footer-two-container-two {
+        display: flex;
+        padding: 22px 0 30px;
+        gap: 90px;
+
+        .container-three {
+            margin-left: 100px;
+
+            .span {
+                font-size: 20px;
+            }
+
+            .follow-us {
+                margin-top: 10px;
+
+            }
+        }
+
+        .container-four {
+            .span {
+                font-size: 30px;
+            }
+            .verified-by{
+                margin-top: 10px;
+
+            }
+
+        }
+    }
+}
