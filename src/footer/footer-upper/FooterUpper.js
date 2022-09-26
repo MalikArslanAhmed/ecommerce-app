@@ -62,8 +62,8 @@ function FooterUpper() {
                 </div>
             </div>
             <div className='query-img-one'>
-                        <img className='daraz-app' src="daraz-app.png" alt="Italian Trulli" />
-                    </div>
+                <img className='daraz-app' src="daraz-app.png" alt="Italian Trulli" />
+            </div>
         </div>
     )
 }

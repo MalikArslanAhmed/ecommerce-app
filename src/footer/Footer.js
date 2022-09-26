@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <div>
         <FooterUpper />
-        {/* <FooterMid /> */}
+        <FooterMid />
         {/* <FooterBottom /> */}
         </div>
     )

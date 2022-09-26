@@ -2,71 +2,34 @@
     display: flex;
     width: 63%;
     margin: auto;
+    justify-content: space-between;
+}
 
-    .footer-two-container-one {
-        display: flex;
-        padding: 22px 0 30px;
-        gap: 28px;
-
-        .container-one {
-            .payment-methods {
-                margin-top: 10px;
-                margin-bottom: 10px;
-            }
-
-            .span {
-                font-size: 20px;
-            }
-
-        }
-
-        .container-two {
-
-            .span {
-                font-size: 20px;
-            }
-
-            .img {
-                .daraz-international {
-                    margin-top: 10px;
-                }
-            }
-
-        }
+@media screen and (max-width:1500px) {
+    .wrapper-two {
+        width: 80%;
     }
+}
 
-    .footer-two-container-two {
-        display: flex;
-        padding: 22px 0 30px;
-        gap: 90px;
+@media screen and (max-width:1045px) {
+    .wrapper-two {
+        flex-wrap: wrap;
+        gap: 20px;
 
-        .container-three {
-            margin-left: 100px;
-
-            .span {
-                font-size: 20px;
-            }
-
-            .follow-us {
-                margin-top: 10px;
-
-            }
-        }
-
-        .container-four {
-            .span {
-                font-size: 30px;
-            }
-            .verified-by{
-                margin-top: 10px;
-
-            }
-
+        .width-adjustment {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 48%;
         }
     }
 }
-// @media screen and (max-width:2560px){
-//         .wrapper-two{
-//             width: 63%
-//         }
-// }
+
+@media screen and (max-width:623px) {
+    .wrapper-two {
+        .width-adjustment {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}

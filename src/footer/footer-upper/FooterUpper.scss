@@ -8,12 +8,11 @@
 
 .footer-one-container {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	padding: 22px 0 30px;
 	color: #fff;
 	width: 63%;
 	margin: auto;
-	gap: 110px;
 
 	.container-one {
 		.customercare {
@@ -87,56 +86,110 @@
 	}
 }
 
-@media screen and (max-width:1057px) {
-	.wrapper-one {
-		.footer-one-container {
-			width: 100%;
-			display: flex;
-			gap: 10px;
-			padding: 10px 10px;
-		}
-
+@media screen and (max-width:1500px) {
+	.footer-one-container {
+		width: 80%;
 	}
 }
 
-@media screen and (max-width:860px) {
+@media screen and (max-width:1182px) {
 	.wrapper-one {
 		.query-img-one {
+
 			display: flex;
 			justify-content: center;
+			padding-bottom: 22px;
+
 		}
 
-		.lower {
-			display: none;
+		.container-three {
+			.lower {
+				.daraz-app {
+					display: none;
+				}
+			}
 		}
 	}
 }
 
-@media screen and (max-width:686px) {
+@media screen and (max-width:942px) {
 	.wrapper-one {
 		.footer-one-container {
+			padding: 15px;
+			width: 96%;
+			font-size: xx-small;
+
+			.container-three {
+				padding-right: 25px;
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width:942px) {
+	.wrapper-one {
+
+		.footer-one-container {
+
+			padding: 15px;
+			width: 96%;
+			font-size: xx-small;
 			flex-wrap: wrap;
 			justify-content: center;
-			gap: 0;
-			.width-adjust {
-				width: 48%;
-				margin: 0;
+
+			.container-one {
+				width: 50%;
+				margin-bottom: 10px;
 			}
-			.container-three{
-				width: 98%;
-				display: flex;
-				justify-content: center;
+
+			.container-two {
+				width: 50%;
+				margin-bottom: 10px;
+				margin-top: 0;
+
+				h3 {
+					margin-top: 0;
+
+				}
 			}
 		}
 	}
 }
-@media screen and (max-width:500px){
+
+@media screen and (max-width:422px) {
 	.wrapper-one {
-		font-size: x-small;
+		.footer-one-container {
+			padding: 6px;}
 		.query-img-one {
-			.daraz-app{
-			width: 50%;
+			.daraz-app {
+				width: 57%;
+			}
 		}
+	}
 }
+
+@media screen and (max-width:374px) {
+	.wrapper-one {
+
+		.footer-one-container {
+			padding: 6px;
+			.container-one {
+				width: 100%;
+			}
+
+			.container-two {
+				width: 100%;
+			}
+		}
+	}
 }
+
+@media screen and (max-width:322px) {
+	.wrapper-one {
+
+		.footer-one-container {
+			width: 82%;
+		}
+	}
 }
