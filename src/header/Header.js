@@ -1,8 +1,11 @@
-import './Header.css';
+import HeaderTop from "./header-top/HeaderTop";
+import HeaderBottom from "./header-bottom/HeaderBottom";
+
 function Header() {
     return (
   <div className='header-wrapper'>
-  dddd
+  < HeaderTop/>
+  <HeaderBottom/>
     </div>
     );
   }
