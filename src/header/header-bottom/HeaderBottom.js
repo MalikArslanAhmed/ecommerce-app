@@ -5,7 +5,7 @@ function HeaderBottom() {
   return (
     <div className='header-bottom-wrapper'>
       <div class="daraz-logo-container">
-        <a href="//www.daraz.pk" data-spm="dhome">
+        <a href="//www.daraz.pk">
           <img className='logo' src="//icms-image.slatic.net/images/ims-web/3ae67ef5-e5f6-42c3-9a40-993ef9a7bfae.png" alt="Daraz" />
         </a>
       </div>
@@ -20,8 +20,8 @@ function HeaderBottom() {
         </span>
       </div>
       <div className='download-app'>
-        <a className='download-app-atribute' href="//www.daraz.pk/mobile-apps" data-spm="dewallet">
-          <img className='download-app-img' src="//icms-image.slatic.net/images/ims-web/7a379e2e-4b65-4617-9188-94e0c768cd9d.png" alt="" />
+        <a className='download-app-atribute' href="//www.daraz.pk/mobile-apps">
+          <img className='download-app-img' src="//icms-image.slatic.net/images/ims-web/7a379e2e-4b65-4617-9188-94e0c768cd9d.png"/>
         </a>
       </div>
     </div>

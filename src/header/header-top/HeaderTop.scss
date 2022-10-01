@@ -30,62 +30,73 @@
 
 @media screen and (max-width:1664px) {
 
-  .header-top-wrapper {
-    .top-container {
-      gap: 0;
-      // margin: 0;
-      // width: 73%;
-    }
+  .header-top-wrapper{
+  .top-container {
+    gap: 0;
+    // margin: 0;
+    // width: 73%;
   }
 }
-
+}
 @media screen and (max-width:1452px) {
 
-  .header-top-wrapper {
-    .top-container {
-      width: 87%;
-      padding-right: 126px;
-    }
+  .header-top-wrapper{
+  .top-container {
+   width: 87%;
   }
 }
-
+}
 @media screen and (max-width:1052px) {
 
-  .header-top-wrapper {
-    .top-container {
-      font-size: x-small;
-    }
+  .header-top-wrapper{
+  .top-container {
+    font-size: x-small;
   }
 }
+}
+@media screen and (max-width:886px) {
 
+  .header-top-wrapper{
+  .top-container {
+   width: 99%;
+  }
+}
+}
+@media screen and (max-width:768px) {
+
+  .header-top-wrapper{
+  .top-container {
+   font-size: 8px;
+  }
+}
+}
 @media screen and (max-width:665px) {
 
-  .header-top-wrapper {
-    .top-container {
-      a {
-        padding: 0px 7px;
-      }
-    }
+  .header-top-wrapper{
+  .top-container {
+   font-size: 7px;
+
+    a{
+   padding: 0px 7px;
+  }
   }
 }
-
+}
 @media screen and (max-width:492px) {
 
-  .header-top-wrapper {
-    font-size: 2px;
-    padding-right: 9px;
+  .header-top-wrapper{
+   font-size: 2px;
+   padding-right: 9px;
     margin: 0;
-
-    .top-container {
-      .save-more-on-app {
-        padding: 0 8px;
-        margin: 0px;
-
-      }
-
-      a {
-        padding: 0px 3px;
-      }
+  .top-container {
+    .save-more-on-app{
+      padding: 0 8px;
+      margin: 0px;
+      
     }
+    a{
+   padding: 0px 3px;
   }
+  }
+}
 }
