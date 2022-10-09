@@ -1,0 +1,182 @@
+.wrapper-signin {
+    background-color: rgba(156, 155, 155, 0.2);
+
+    .width-adjust {
+        width: 62%;
+        margin: auto;
+        padding-bottom: 30px;
+    }
+
+    .container-one {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .welcome-to-daraz {
+            font-size: 22px;
+            color: #424242;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .new-member {
+            color: #757575;
+
+            .register {
+                color: #1a9cb7;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .container-two {
+        background-color: white;
+        display: flex;
+        padding: 25px 50px 50px 25px;
+        gap: 90px;
+        align-items: center;
+
+        .container-two-left {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            width: calc(60% - 45px);
+
+            .input-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 36px;
+
+                .input-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 9px;
+
+                    label {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            input {
+                width: calc(100% - 46px);
+                border: 1px solid #ddd;
+                font-size: 12px;
+                height: 40px;
+                padding: 5px 23px;
+            }
+
+            .forgot-password {
+                display: flex;
+                justify-content: flex-end;
+
+                a {
+                    color: #1a9cb7;
+                }
+            }
+        }
+    }
+}
+
+.container-two-right {
+    display: flex;
+    width: calc(40% - 45px);
+    flex-direction: column;
+    gap: 12px;
+
+    p {
+        color: #757575;
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .login-button-one {
+        background-color: #f57224;
+        margin: 0;
+        padding: 26px 1px;
+        font-size: 22px;
+        border-width: 0px;
+        color: #FFFFFF;
+
+        &:hover {
+            background-color: #d0611e;
+            color: #FFFFFF;
+        }
+    }
+
+    .facebook-button-one {
+        border-radius: 3px;
+        padding: 20px 0;
+        border: none;
+        background: #3b5998;
+        color: white;
+
+        &:hover {
+            background-color: #1e0fbf;
+            color: #FFFFFF;
+        }
+    }
+
+    .google-button-one {
+        border-radius: 3px;
+        padding: 20px 0;
+        border: none;
+        background: #d34836;
+    }
+}
+
+@media screen and (max-width: 1452px) {
+    .wrapper-signin {
+        .width-adjust {
+            width: 78%;
+        }
+    }
+}
+
+@media screen and (max-width: 942px) {
+    .wrapper-signin {
+        .width-adjust {
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper-signin {
+        .container-one {
+            display: block;
+
+            .welcome-to-daraz {
+                font-size: 19px;
+            }
+
+            .new-member {
+                font-size: small;
+                display: flex;
+                justify-content: right;
+            }
+        }
+
+        .container-two {
+            display: block;
+
+            .container-two-left {
+                width: 100%;
+
+                input {
+                    font-size: 11px;
+                    padding: 4px 6px;
+                    width: 100%;
+                }
+
+                .forgot-password a {
+                    padding-bottom: 14px;
+                }
+            }
+
+            .container-two-right {
+                width: 100%;
+            }
+        }
+    }
+}

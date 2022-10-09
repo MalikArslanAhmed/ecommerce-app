@@ -1,13 +1,13 @@
 .header-bottom-wrapper {
-
-  text-align: center;
   width: 62%;
   margin: auto;
   display: flex;
   padding-top: 11px;
+  justify-content: space-between;
+  align-items: center;
 
   .daraz-logo-container {
-    width: 220px;
+    padding-right: 64px;
 
     .logo {
       width: 135px;
@@ -16,36 +16,45 @@
   }
 
   .search-in-daraz {
-    background-color: #f5f5f5;
-    padding-left: 18px;
-    padding-right: 552px;
-    width: 11%;
-    height: 53px;
-
-    .para {
-      color: #b7b7b7;
-      font-size: 16px;
-      margin: 0;
-      margin-top: 7px;
-    }
-  }
-
-  .daraz-search-icon {
-    background-color: #f85606;
     display: flex;
     align-items: center;
-    width: 62px;
-    height: 53px;
+    width: 96%;
+    padding-bottom: 2px;
 
-    .search-icon {
-      margin: 16px 16px;
-      color: white;
-      font-size: 22px;
+    .search-input-container {
+      background-color: #f5f5f5;
+      display: flex;
+      width: 100%;
+
+      .search-box {
+        padding: 12px 12px;
+        background-color: transparent;
+        border-style: hidden;
+        width: 100%;
+      }
+
+      .search-box::placeholder {
+        color: rgb(177, 176, 176);
+      }
+
+      .search-box:focus {
+        border: none;
+        outline: none;
+      }
+
+      .search-icon {
+        color: white;
+        font-size: 22px;
+        background-color: #f85606;
+        height: 100%;
+        padding: 12px;
+      }
     }
   }
 
   .add-to-cart {
-    margin: 15px 0 0 32px;
+    margin-left: 21px;
+    font-size: 27px;
   }
 
   .cart {
@@ -56,20 +65,9 @@
     display: flex;
     align-items: center;
 
-    .download-app-atribute {
-
-      .download-app-img {
-        width: 229px;
-        padding-left: 24px;
-      }
-    }
-  }
-}
-
-@media screen and (max-width:1880px) {
-  .header-bottom-wrapper {
-    .search-in-daraz {
-      padding-right: 36%;
+    .download-app-img {
+      width: 78%;
+      padding-left: 59px;
     }
   }
 }
@@ -77,37 +75,99 @@
 @media screen and (max-width:1452px) {
   .header-bottom-wrapper {
     width: 80%;
-   
-    .search-in-daraz {
-      padding-right: 36%;
-    }
   }
 }
 
 @media screen and (max-width:1110px) {
   .header-bottom-wrapper {
-    padding-top: 8px;
+    .add-to-cart {
+      margin: 4px 0 0 17px;
+    }
+
+    .download-app .download-app-atribute .download-app-img {
+      height: 39px;
+      width: auto;
+    }
+  }
+}
+
+@media screen and (max-width:942px) {
+  .header-bottom-wrapper {
+    width: 96%;
+
+    .daraz-logo-container {
+      padding-right: 18px;
+    }
+
+    .download-app {
+      .download-app-img {
+        padding-left: 0;
+      }
+    }
+
+    .add-to-cart {
+      margin: 4px 16px 0 17px;
+    }
+  }
+}
+
+@media screen and (max-width: 942px) {
+  .header-bottom-wrapper {
+    padding-top: 5px;
+
+    .download-app {
+      .download-app-img {
+        padding-left: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 602px) {
+  .header-bottom-wrapper {
     .daraz-logo-container {
       .logo {
-        width: 86px;
+        width: 89px;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .header-bottom-wrapper {
+    width: 100%;
+
+    .daraz-logo-container {
+      .logo {
+        width: 55px;
+        height: auto;
       }
     }
 
     .search-in-daraz {
-      height: 36px;
-      .para {
-        font-size: 9px;
+      .search-input-container {
+        .search-box {
+          padding: 3px 8px;
+          font-size: xx-small;
+        }
+
+        .search-icon {
+          padding: 3px;
+        }
       }
     }
-    .daraz-search-icon {
-      height: 36px;
+
+    .add-to-cart {
+      font-size: 19px;
     }
-   .add-to-cart {
-      margin: 4px 0 0 17px;
-   }
-   .download-app .download-app-atribute .download-app-img {
-    height: 39px;
-    width: auto;
+
+    .download-app {
+      width: 36%;
+
+      .download-app-img {
+        padding-left: 1px;
+      }
+    }
   }
-}
 }
