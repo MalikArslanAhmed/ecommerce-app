@@ -1,0 +1,395 @@
+.wrapper-signup {
+    background-color: rgba(156, 155, 155, 0.2);
+
+    .width-adjust {
+        width: 40%;
+        margin: auto;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .container-one {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .create-your-daraz {
+            font-size: 22px;
+            color: #424242;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .already-member {
+            color: #757575;
+            font-size: small;
+
+            .login {
+                color: #1a9cb7;
+                text-decoration: none;
+                font-size: small;
+            }
+        }
+    }
+
+    .container-two {
+        background-color: white;
+        display: flex;
+        padding: 25px 50px 50px 25px;
+        gap: 22px;
+
+        .container-two-left {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            width: calc(60% - 11px);
+
+            .input-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 36px;
+
+                .input-container {
+                    display: flex;
+                    gap: 5px;
+                    flex-direction: column;
+
+
+                }
+
+                .label {
+                    font-size: 12px;
+                    align-items: center;
+                    display: flex;
+                }
+
+            }
+
+            .birthday {
+                display: flex;
+                flex-direction: column;
+
+                .label {
+                    padding-bottom: 5px;
+                    font-size: 12px;
+                    word-spacing: 6cm;
+                }
+
+
+                .month-day-year-gender {
+                    display: flex;
+
+                    .month-day-year {
+                        display: flex;
+                    }
+
+                    .input-select-container {
+                        position: relative;
+
+                        select {
+                            min-width: 79px;
+                            padding: 5px 17px 5px 5px;
+
+                        }
+
+                        .arrow-updown {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            bottom: 0;
+                            margin: auto;
+                            color: #a9a9a9;
+                            pointer-events: none;
+                        }
+                    }
+
+                    .gender {
+                        margin-left: 8px;
+                        padding: 5px 17px 5px 5px;
+
+                    }
+
+                    select {
+                        border: 1px solid #ddd;
+                        font-size: 16px;
+                        color: #999;
+                        appearance: none;
+                    }
+                }
+            }
+
+            input {
+                width: calc(100% - 46px);
+                border: 1px solid #ddd;
+                font-size: 12px;
+                height: 40px;
+                padding: 0 18px;
+
+            }
+
+
+            .forgot-password {
+                display: flex;
+                justify-content: flex-end;
+
+                a {
+                    color: #1a9cb7;
+                }
+            }
+        }
+
+        .container-two-right {
+            width: calc(40% - 11px);
+
+            .sign-up {
+                a {
+                    text-decoration: none;
+                    color: #1a9cb7;
+                }
+            }
+
+            .input-container {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .label {
+                    font-size: 12px;
+                }
+
+                .full-name {
+                    max-width: 100%;
+                    border: 1px solid #ddd;
+                    font-size: 12px;
+                    height: 40px;
+                    padding: 0 12px;
+                }
+            }
+
+            .check-box-container {
+                display: flex;
+                align-items: center;
+
+                .check-box {
+                    display: flex;
+
+                    p {
+                        color: #757575;
+                        font-size: 12px;
+                        padding-left: 7px;
+                    }
+
+                    .check-box-icon {
+                        height: 18px;
+                        width: 18px;
+                        margin: 0;
+                    }
+                }
+            }
+
+            p {
+                font-size: 12px;
+            }
+
+            .sign-up-button {
+                background-color: #f57224;
+                margin: 0;
+                padding: 9px 1px;
+                font-size: 14px;
+                border-width: 0px;
+                color: #FFFFFF;
+
+                &:hover {
+                    background-color: #d0611e;
+                    color: #FFFFFF;
+                }
+
+            }
+
+            .sign-up-with-email-button {
+                background-color: #FFFFFF;
+                margin: 0;
+                padding: 8px 1px;
+                font-size: 14px;
+                border-width: 1px;
+                color: #f57224;
+                border-color: #f57224;
+
+                &:hover {
+                    background-color: #FEEADE;
+                    color: #f57224;
+                }
+            }
+
+            .facebook-google-button {
+                display: flex;
+                gap: 25px;
+
+                .facebook-button {
+                    border-radius: 3px;
+                    padding: 0px 15px;
+                    border: none;
+                    background: #3b5998;
+                    color: white;
+                    display: flex;
+                    align-items: center;
+                    font-size: large;
+                    color: #FEEADE;
+
+                    .facebook-icon {
+                        margin-right: 8px;
+                    }
+                }
+
+                .google-button {
+                    border-radius: 3px;
+                    padding: 8px 15px;
+                    border: none;
+                    background: #d34836;
+                    color: #FEEADE;
+                    font-size: large;
+                    display: flex;
+                    align-items: center;
+
+                    .google-icon {
+                        margin-right: 8px;
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 1900px) {
+    .wrapper-signup {
+        .width-adjust {
+            width: 78%;
+        }
+    }
+}
+
+@media screen and (max-width: 983px) {
+    .wrapper-signup {
+        .width-adjust {
+            width: 95%;
+        }
+    }
+}
+
+@media screen and (max-width: 803px) {
+    .wrapper-signup {
+        .container-one {
+            display: block;
+        }
+
+        .container-two {
+            display: block;
+
+            .container-two-left {
+                width: 100%;
+
+                .birthday {
+                    .month-day-year-gender {
+                        display: flex;
+                        margin-bottom: 9px;
+                    }
+                }
+            }
+
+            .container-two-right {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 453px) {
+    .wrapper-signup {
+        .container-two {
+            .container-two-left {
+                input {
+                    font-size: 11px;
+                    padding: 0px 0px 0px 7px;
+                    width: 100%;
+
+                }
+
+                .birthday {
+                    .label {
+                        font-size: 12px;
+                        word-spacing: 4cm;
+                    }
+
+                    .month-day-year-gender {
+                        font-size: 11px;
+
+                        .input-select-container select {
+                            min-width: 0;
+                            padding: 4px 11px 6px 2px;
+                        }
+                    }
+                }
+            }
+
+            .container-two-right {
+                .input-container {
+                    .full-name {
+                        width: 94%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 354px) {
+    .wrapper-signup {
+        .container-two {
+            .container-two-left {
+                input {
+                    font-size: 10px;
+                }
+
+                .birthday {
+                    .label {
+                        font-size: 12px;
+                        word-spacing: 2.5cm;
+                    }
+
+                    .month-day-year-gender {
+                        font-size: 10px;
+
+                        .input-select-container select {
+                            min-width: 0;
+                            padding: 4px 11px 6px 2px;
+                            font-size: 10px;
+
+                        }
+                    }
+                }
+            }
+
+            .container-two-right {
+                .facebook-google-button {
+                    .facebook-button {
+                        padding: 0px 4px;
+                    }
+
+                    .google-button {
+                        border-radius: 3px;
+                        padding: 8px 8px;
+                    }
+
+                    .input-container {
+                        .full-name {
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
