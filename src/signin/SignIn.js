@@ -25,7 +25,7 @@ function SignIn() {
                         </div>
                     </div>
                     <div className="forgot-password">
-                        <a href='aa' >Forgot Password?</a>
+                        <Link to='/forget-password'>Forgot Password?</Link>
                     </div>
                 </div>
                 <div className="container-two-right">

@@ -1,0 +1,74 @@
+.daraz-affiliate-program-wrapper {
+    margin-top: 10px;
+
+    .img-container {
+
+        .img {
+            width: 100%;
+        }
+    }
+
+    .daraz-affiliate-program-container {
+        width: 63%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .sign-button-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .sign-button {
+            margin-top: 12px;
+            margin-bottom: 12px;
+            border: none;
+            background-color: #f85606;
+            color: white;
+            border-radius: 6px;
+            font-size: large;
+            font-weight: 550;
+            padding: 10px 26px;
+            cursor: pointer;
+            width: 217px;
+        }
+    }
+
+    .img-one {
+        img {
+            width: 100%;
+        }
+    }
+
+    .img-two {
+        img {
+            width: 100%;
+        }
+    }
+
+    .img-three {
+        margin-top: 20px;
+
+        img {
+            width: 100%;
+        }
+    }
+    .buttom{
+        h1{
+            font-size: 21px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1359px) {
+    .daraz-affiliate-program-wrapper {
+        .sign-button-container {
+            .sign-button {
+                font-size: 6px;
+                padding: 6px 12px;
+                width: 65px;
+            }
+        }
+    }
+}

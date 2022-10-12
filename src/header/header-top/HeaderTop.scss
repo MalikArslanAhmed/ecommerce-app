@@ -20,15 +20,40 @@
       margin-top: 4px;
       margin-bottom: 7px;
 
+      &:hover {
+        color: #f85606;
+        text-decoration: underline;
+      }
+
       .login {
         text-decoration: none;
         color: black;
+
+        &:hover {
+          color: #f85606;
+          text-decoration: underline;
+        }
       }
+
       .signup {
         text-decoration: none;
         color: black;
+
+        &:hover {
+          color: #f85606;
+          text-decoration: underline;
+        }
       }
     }
+  }
+}
+.daraz-affiliate-program {
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    color: #f85606;
+    text-decoration: underline;
   }
 }
 
@@ -107,7 +132,7 @@
       gap: 16px;
 
       .list {
-        font-size: 5px;
+        font-size: 4px;
       }
     }
   }

@@ -4,6 +4,8 @@ import Header from './header/Header'
 import LandingPage from './landingpage/LandingPage'
 import SignIn from './signin/SignIn'
 import SignUp from './signup/SignUp'
+import ForgetPassword from './forget-password/ForgetPassword'
+import DarazAffiliateProgram from './daraz-affiliate-program/DarazAffiliateProgram'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -14,11 +16,14 @@ function App() {
         <Routes>
           <Route path='sign-in' element={<SignIn />}>
           </Route>
+          <Route path='forget-password' element={<ForgetPassword />}>
+          </Route>
           <Route path='sign-up' element={<SignUp />}>
           </Route>
           <Route path='/' element={<LandingPage />}>
           </Route>
-
+          <Route path='/daraz-affiliate-program' element={<DarazAffiliateProgram />}>
+          </Route>
         </Routes>
         <Footer />
       </div>

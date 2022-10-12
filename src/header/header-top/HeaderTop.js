@@ -1,6 +1,5 @@
 import './HeaderTop.scss'
 import {
-
   Link
 } from "react-router-dom";
 function HeaderTop() {
@@ -8,7 +7,7 @@ function HeaderTop() {
     <nav className='header-top-wrapper'>
       <ul className='list-container'>
         <li className='list save-more'>SAVE MORE ON APP</li>
-        <li className='list'>DARAZ AFFILIATE PROGRAM</li>
+        <li className='list'><Link className='daraz-affiliate-program' to='/daraz-affiliate-program'>DARAZ AFFILIATE PROGRAM</Link></li>
         <li className='list'>SELL ON DARAZ</li>
         <li className='list'>CUSTOMER CARE</li>
         <li className='list'>TRACK MY ORDER</li>

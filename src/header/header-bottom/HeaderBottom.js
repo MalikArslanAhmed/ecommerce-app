@@ -2,18 +2,20 @@ import './HeaderBottom.scss'
 import { AiOutlineSearch } from "react-icons/ai";
 import { FiShoppingCart } from "react-icons/fi";
 import { IconContext } from "react-icons";
-
+import {
+  Link
+} from "react-router-dom";
 function HeaderBottom() {
   return (
     <div className='header-bottom-wrapper'>
       <div className='daraz-logo-container'>
-
-        <img className='logo' src="//icms-image.slatic.net/images/ims-web/3ae67ef5-e5f6-42c3-9a40-993ef9a7bfae.png" alt="Daraz" />
-
+        <Link className='daraz-logo' to='/'>
+          <img className='logo' src="//icms-image.slatic.net/images/ims-web/3ae67ef5-e5f6-42c3-9a40-993ef9a7bfae.png" alt="Daraz" />
+        </Link>
       </div>
       <div className='search-in-daraz'>
         <div className='search-input-container'>
-          <input className='search-box' placeholder='Search in Daraz'/>
+          <input className='search-box' placeholder='Search in Daraz' />
           <IconContext.Provider value={{ className: "search-icon" }}>
             <AiOutlineSearch />
           </IconContext.Provider>

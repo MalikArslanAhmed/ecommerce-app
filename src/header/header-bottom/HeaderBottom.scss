@@ -9,9 +9,14 @@
   .daraz-logo-container {
     padding-right: 64px;
 
-    .logo {
-      width: 135px;
-      height: auto;
+    .daraz-logo {
+      border: none;
+      background-color: white;
+
+      .logo {
+        width: 135px;
+        height: auto;
+      }
     }
   }
 
@@ -68,6 +73,7 @@
     .download-app-img {
       width: 78%;
       padding-left: 59px;
+      padding-bottom: 5px;
     }
   }
 }
@@ -139,9 +145,11 @@
     width: 100%;
 
     .daraz-logo-container {
-      .logo {
-        width: 55px;
-        height: auto;
+      .daraz-logo {
+        .logo {
+          width: 55px;
+          height: auto;
+        }
       }
     }
 
@@ -167,6 +175,7 @@
 
       .download-app-img {
         padding-left: 1px;
+        padding-bottom: 0;
       }
     }
   }
