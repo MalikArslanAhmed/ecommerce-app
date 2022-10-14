@@ -1,4 +1,7 @@
 import './DarazAffiliateProgram.scss'
+import {
+    Link
+} from "react-router-dom";
 function DarazAffiliateProgram() {
     return (
         <div className="daraz-affiliate-program-wrapper">
@@ -10,7 +13,7 @@ function DarazAffiliateProgram() {
                     <img src="//laz-img-cdn.alicdn.com/tfs/TB1pWACWxz1gK0jSZSgSuuvwpXa.jpg#width=1188&amp;height=140_1200x1200q75.jpg_.webp" alt='' />
                 </div>
                 <div className='sign-button-container'>
-                    <button className='sign-button'>SIGN UP NOW</button>
+                    <Link to='/daraz-affiliate-signup'><button className='sign-button'>SIGN UP NOW</button></Link>
                 </div>
                 <div className='img-two'>
                     <img src="//laz-img-cdn.alicdn.com/tfs/TB1AfZ7itTfau8jSZFwSut1mVXa.jpg#width=1188&height=155_1200x1200q75.jpg_.webp" alt='' />
@@ -19,7 +22,7 @@ function DarazAffiliateProgram() {
                     <img src="//laz-img-cdn.alicdn.com/tfs/TB1n0_4k9R26e4jSZFESuvwuXXa.jpg#width=1188&height=213_1200x1200q75.jpg_.webp" alt='' />
                 </div>
                 <div className='sign-button-container'>
-                    <button className='sign-button'>SIGN UP NOW</button>
+                    <Link to='/daraz-affiliate-signup'><button className='sign-button'>SIGN UP NOW</button></Link>
                 </div>
                 <div className='buttom'>
                     <h1>Affiliate Agreement </h1>
