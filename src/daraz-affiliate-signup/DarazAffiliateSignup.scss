@@ -1,0 +1,129 @@
+.daraz-affiliate-signup-wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #FF4700;
+    font-family: 'Proxima Nova Condensed' !important;
+
+    .img-one-container {
+        .img-one {
+            width: 100%;
+        }
+    }
+
+    .container-one {
+        padding-left: 20px;
+        color: white;
+        padding-bottom: 20px;
+
+        .acc-type {
+            font-size: large;
+            font-weight: 600;
+        }
+
+        .check-box-container-one {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 5px 15px 7px 15px;
+            font-size: 18px;
+
+            .input {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .container-two {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        input {
+            width: 94%;
+            margin: auto;
+            background-color: #FF4700;
+            border-color: #f6f6f6;
+            border-radius: 5px;
+        }
+
+        .description-or-links {
+            padding-bottom: 50px;
+        }
+
+        select {
+            width: 94%;
+            margin: auto;
+            background-color: #FF4700;
+            border-color: #f6f6f6;
+            border-radius: 5px;
+            color: white;
+            padding: 1px 2px;
+            border-width: 1px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .container-three {
+        padding-left: 20px;
+        color: white;
+        padding-bottom: 20px;
+
+        .traffic-type {
+            font-size: large;
+            font-weight: 600;
+            padding-left: 20px;
+        }
+
+        .check-box-container-two {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin: 5px 15px 7px 15px;
+            font-size: 12px;
+
+            .input {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    label {
+        padding-left: 30px;
+        color: white;
+        font-size: 12px;
+    }
+
+    .yes-no {
+        padding-left: 35px;
+    }
+
+    .submit-button-container {
+        display: flex;
+        justify-content: center;
+
+        .submit-button {
+            width: max-content;
+            border-radius: 8px;
+            padding: 10px 15px;
+            background-color: white;
+            color: #FF4700;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width:744px) {
+    .daraz-affiliate-signup-wrapper {
+        width: 90%;
+    }
+}
+@media screen and (max-width:420px) {
+    .daraz-affiliate-signup-wrapper {
+        width: 98%;
+    }
+}
