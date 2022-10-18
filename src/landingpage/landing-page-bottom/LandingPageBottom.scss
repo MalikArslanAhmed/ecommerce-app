@@ -1,0 +1,63 @@
+.landing-page-bottom-wrapper {
+    .items-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+        width: 62%;
+        margin: auto;
+        background-color: white;
+        padding: 0 15px;
+        margin-bottom: 20px;
+
+        .items-container {
+            width: calc((100% - 25px)/6);
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+
+            .margin {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .item-img-container {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .description {
+                font-size: 14px;
+                line-height: 18px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+            }
+
+            .current-rs {
+                color: #f57224;
+                font-weight: 600;
+                font-size: large;
+            }
+
+            .off-prize-and-percentage {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                font-size: 12px;
+
+                .text-decoration {
+                    text-decoration: line-through;
+                    color: #9e9e9e;
+                }
+
+                .off-percentage {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

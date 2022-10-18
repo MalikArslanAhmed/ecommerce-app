@@ -1,7 +1,12 @@
-import './LandingPage.css';
+import LandingPageUpper from './landing-page-upper/LandingPageUpper'
+import LandingPageBottom from './landing-page-bottom/LandingPageBottom'
+import './LandingPage.scss'
 function LandingPage() {
-    return (
-  <div><p>aa</p></div>
-    );
-  }
-  export default LandingPage;
+  return (
+    <div className='background'>
+      <LandingPageUpper />
+      <LandingPageBottom />
+    </div>
+  );
+}
+export default LandingPage;

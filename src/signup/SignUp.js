@@ -3,10 +3,38 @@ import { TiArrowUnsorted } from "react-icons/ti";
 import { AiFillFacebook } from "react-icons/ai";
 import { FaGooglePlusG } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import { useState } from 'react';
 import {
     Link
 } from "react-router-dom";
 function SignUp() {
+    const [input, setInputs] = useState({
+        phone: '',
+        password: '',
+        month: '',
+        day: '',
+        year: '',
+        gender: '',
+        fullName: '',
+        checkbox: false,
+        checkbox1: false
+    })
+    // const [password, setPassword] = useState('')
+    // const [month, setMonth] = useState('')
+    // const [day, setDay] = useState('')
+    // const [year, setYear] = useState('')
+    // const [gender, setGender] = useState('')
+    // const [name, setName] = useState('')
+    // const [cheakbox, setCheakbox] = useState('')
+    const handleChange = (event) => {  // name/value    => event.target
+        setInputs({
+            ...input,   //spread operator   triple dot ...
+            [event.target.name]: event.target.type === 'checkbox' ? event.target.checked : event.target.value
+        })
+    }
+    const loginUser = () => {
+        console.log('checkbox=', input.checkbox);
+    }
     const months = [
         { name: 'January', value: 'january' },
         { name: 'February', value: 'february' },
@@ -50,11 +78,15 @@ function SignUp() {
                         <div className="input-wrapper">
                             <div className="input-container">
                                 <label className='label'>Phone Number*</label>
-                                <input type="email" className="email-input padding" placeholder="Please enter your phone number" />
+                                <input type="email" value={input.phone} name="phone" className="email-input padding"
+                                    onChange={handleChange}
+                                    placeholder="Please enter your phone number" />
                             </div>
                             <div className="input-container">
                                 <label className='label'>Password*</label>
-                                <input type="password" className="password-input padding" placeholder="Minimum 6 characters with a number and a letter" />
+                                <input type="password" value={input.password} name="password" className="password-input padding"
+                                    onChange={handleChange}
+                                    placeholder="Minimum 6 characters with a number and a letter" />
                             </div>
                         </div>
                         <div className='birthday'>
@@ -62,10 +94,11 @@ function SignUp() {
                             <div className='month-day-year-gender'>
                                 <div className='month-day-year'>
                                     <div className='input-select-container'>
-                                        <select className='month'>
-                                            <option value="">Month</option>
+                                        <select className='month' value={input.month} name="month" onChange={handleChange}>
+                                            <option>Month</option>
                                             {months.map(item => {
-                                                return <option key={item.value} value={item.value}>{item.name}</option>
+                                                return <option key={item.value} value={item.value}>{item.name}
+                                                </option>
                                             })
                                             }
                                         </select>
@@ -74,7 +107,7 @@ function SignUp() {
                                         </IconContext.Provider>
                                     </div>
                                     <div className='input-select-container'>
-                                        <select className='day' >
+                                        <select className='day' value={input.day} name="day" onChange={handleChange}>
                                             <option value="">Day</option>
                                             {days.map(day => {
                                                 return day
@@ -86,7 +119,7 @@ function SignUp() {
                                         </IconContext.Provider>
                                     </div>
                                     <div className='input-select-container'>
-                                        <select className='year' >
+                                        <select className='year' value={input.year} name="year" onChange={handleChange} >
                                             <option value="">Year</option>
                                             {years.map(year => {
                                                 return year
@@ -99,7 +132,7 @@ function SignUp() {
                                     </div>
                                 </div>
                                 <div className='input-select-container'>
-                                    <select className='gender'>
+                                    <select className='gender' value={input.gender} name="gender" onChange={handleChange}>
                                         <option value="">Gender</option>
                                         {genders.map(item => {
                                             return <option key={item.value} value={item.value}>{item.gender}</option>
@@ -117,16 +150,19 @@ function SignUp() {
                     <div className="container-two-right">
                         <div className="input-container">
                             <label className='label'>Full Name*</label>
-                            <input type="text" className="full-name" placeholder="Enter your first and last name" />
+                            <input type="text" className="full-name"
+                                value={input.fullName} name="fullName" onChange={handleChange}
+                                placeholder="Enter your first and last name" />
                         </div>
                         <div className='check-box-container'>
                             <label className='check-box'>
-                                <input className='check-box-icon' type="checkbox" />
+                                <input className='check-box-icon' type="checkbox"
+                                    value={input.checkbox} name="checkbox" onChange={handleChange} />
                                 <p>I'd like to receive exclusive offers and promotions via SMS
                                 </p>
                             </label>
                         </div>
-                        <button className="sign-up-button">SIGN UP</button>
+                        <button className="sign-up-button" onClick={loginUser}>SIGN UP</button>
                         <p className='sign-up'>By clicking “SIGN UP”, I agree to Daraz's <a className='term-of-use' href='a'>Terms of Use</a> and<a href='a'> Privacy Policy</a></p>
                         <p>Or, sign up with</p>
                         <button className="sign-up-with-email-button">Sign up with Email </button>
