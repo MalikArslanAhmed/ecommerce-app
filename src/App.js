@@ -8,6 +8,7 @@ import ForgetPassword from './forget-password/ForgetPassword'
 import DarazAffiliateProgram from './daraz-affiliate-program/DarazAffiliateProgram'
 import DarazAffiliateSignup from './daraz-affiliate-signup/DarazAffiliateSignup'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Counter } from './Redux/features/counter/Counter';
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
           <Route path='/daraz-affiliate-program' element={<DarazAffiliateProgram />}>
           </Route>
           <Route path='/daraz-affiliate-signup' element={<DarazAffiliateSignup />}>
+          </Route>
+          <Route path='/redux-test' element={<Counter />}>
           </Route>
         </Routes>
         <Footer />
